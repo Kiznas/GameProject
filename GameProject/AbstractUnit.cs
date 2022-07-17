@@ -15,10 +15,6 @@ namespace Game
             {
                 return _attackCoef;
             }
-            set
-            {
-                _attackCoef = value;
-            }
         }
 
         public double HealthPoints
@@ -53,7 +49,7 @@ namespace Game
             }
         }
 
-        public Unit(double healthPoints, double attackDamage)
+        public Unit(double healthPoints, double attackDamage, double attackCoef)
         {
 
             if (healthPoints > 0)
@@ -72,6 +68,15 @@ namespace Game
             else
             {
                 throw new ArgumentException("Too low attack damage");
+            }
+
+            if (attackCoef >= 0)
+            {
+                _attackCoef = attackCoef;
+            }
+            else
+            {
+                throw new ArgumentException("Died");
             }
         }
 

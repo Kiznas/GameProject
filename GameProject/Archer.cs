@@ -6,9 +6,8 @@ namespace Game
 {
     public class Archer : Unit
     {
-        public Archer() : base(120, 35)
+        public Archer() : base(120, 35, 1.2)
         {
-            AttackCoef = 1.2;
         }
 
         public bool Dodge()

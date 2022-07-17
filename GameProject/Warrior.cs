@@ -6,9 +6,9 @@ namespace Game
 {
     public class Warrior : Unit
     {
-        public Warrior() : base(200, 20)
+        public Warrior() : base(200, 20, 0.5)
         {
-            AttackCoef = 0.5;
+            
         }
 
         public override double Attack(Unit unit)
