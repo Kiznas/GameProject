@@ -7,9 +7,9 @@ namespace Game
     {
         static void Main(string[] args)
         { 
-            Console.WriteLine(OneVSOne());
-            Console.WriteLine(ThreeVsThree());
-            Console.WriteLine(BattleRoyale());
+            //Console.WriteLine(OneVSOne());
+            //Console.WriteLine(ThreeVsThree());
+            //Console.WriteLine(BattleRoyale());
         }
         static string OneVSOne()
         {
