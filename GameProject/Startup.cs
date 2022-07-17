@@ -17,7 +17,6 @@ namespace Game
                 unit[0].Defence();
                 if (unit[1].HealthPoints <= 0 || unit[0].HealthPoints <= 0)
                 {
-                    Console.WriteLine("Killed");
                     break;
                 }
                 Console.WriteLine(unit[0].GetType() + " Unit 1 HP");
@@ -28,14 +27,12 @@ namespace Game
             } while (unit[1].HealthPoints > 0 || unit[0].HealthPoints > 0);
             if (unit[0].HealthPoints < 0)
             {
-                Console.WriteLine(unit[1].ToString() + " killed " + unit[0].GetType());
+                Console.WriteLine(unit[1].ToString() + " KILLED " + unit[0].ToString());
             }
             else
             {
-                Console.WriteLine(unit[0].ToString() + " killed " + unit[1].GetType());
+                Console.WriteLine(unit[0].ToString() + " KILLED " + unit[1].ToString());
             }
-            
-
         }
     }
 }
